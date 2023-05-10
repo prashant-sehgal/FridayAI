@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+        <title>Friday AI</title>
+    </head>
+    <body>
+        <div class="nav">
+            <div id="openweathermap-widget-24"></div>
+
+            <p class="title">FRIDAY A.I.</p>
+            <h1 class="time"></h1>
+        </div>
+
+        <div class="container">
+            <div class="queryFormContainer">
+                <div class="query-result">
+                    <h3 style="text-align: center; padding-top: 5px;" id="h3-message">Result of query will be displayed here...</h3>
+                    <iframe  frameborder="0" id="queryOut"></iframe>
+                </div>
+                <form class="form-container">
+ 
+                        <!-- <input type="text" id="query" name="query"> -->
+                        <textarea name="query" id="query" placeholder="Ask Anything"></textarea>
+                
+                    <input type="submit" value="Go" id="goBtn">
+                </form>
+                <div class="app-shotcuts">
+                    <div class="app">
+                        <img src="/src/img/Instagram_logo_2016.svg.webp" alt="" class="instragram.com">
+                    </div>
+                    <div class="app">
+                        <img src="/src/img/Spotify_icon.svg.png" alt="" class="spotify.com">
+                    </div>
+                    <div class="app">
+                        <img src="/src/img/netflix-logo-circle-png-5.png" alt="" class="netflix.com">
+                    </div>
+                    <div class="app">
+                        <img src="/src/img/hd-youtube-logo-png-transparent-background-20.png" alt="" class="youtube.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 24,cityid: '1256052',appid: 'c7ea957c75c80486e162c32772208ec3',units: 'metric',containerid: 'openweathermap-widget-24',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+       
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
